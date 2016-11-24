@@ -163,6 +163,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="mnO-tP-7vs">
+            <objects>
+                <viewController id="8tX-79-QJz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CtL-CB-OAu"/>
+                        <viewControllerLayoutGuide type="bottom" id="1A7-Qu-hdV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kMF-vu-lIS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbj-Of-W1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789" y="142"/>
+        </scene>
     </scenes>
     <resources>
         <image name="sky.jpg" width="4474" height="2517"/>
