@@ -14,6 +14,12 @@ class TimerVC: UIViewController {
     var timeLeft = 10.00
     var myTimer : Timer!
     
+    var minutes = 0
+    var seconds = 0
+    var fractions = 0
+    
+    var timerString = ""
+    
     @IBOutlet weak var countdownLabel: UILabel!
     
     
@@ -29,19 +35,32 @@ class TimerVC: UIViewController {
         
         // etc ...
         
-        myTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector (TimerVC.timerRunning), userInfo: nil, repeats: true)
+        myTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector (TimerVC.timerRunning), userInfo: nil, repeats: true)
     }
     
     func timerRunning() {
         
         countdownLabel.text = "\(timeLeft)"
         
-        timeLeft -= 0.1
-        if timeLeft == 0 {
-            countdownLabel.text = "Time For Your Next Activity"
-            myTimer.invalidate()
+        fractions += 1
+        if fractions == 100 {
+            seconds += 1
+            fractions = 0
         }
         
+        if seconds == 60 {
+            minutes += 1
+            seconds = 0
+        }
+
+        let fractionString = fractions > 9 ? "\(fractions)" : "0\(fractions)"
+        let secondsString = seconds > 9 ? "\(seconds)" : "0\(seconds)"
+        let minutessString = minutes > 9 ? "\(minutes)" : "0\(minutes)"
+        
+        timerString = "\(minutessString): \(secondsString)"
+        
+        countdownLabel.text = timerString
+
     }
     
     override func didReceiveMemoryWarning() {
