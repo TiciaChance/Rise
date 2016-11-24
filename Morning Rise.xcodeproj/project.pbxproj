@@ -13,6 +13,7 @@
 		110628C41DE66B4900990294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110628C31DE66B4900990294 /* Assets.xcassets */; };
 		110628C71DE66B4900990294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110628C51DE66B4900990294 /* LaunchScreen.storyboard */; };
 		110628CF1DE66B7C00990294 /* sky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 110628CE1DE66B7C00990294 /* sky.jpg */; };
+		11CC6DE41DE72B3000F86A85 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CC6DE31DE72B3000F86A85 /* TimerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		110628C61DE66B4900990294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		110628C81DE66B4900990294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		110628CE1DE66B7C00990294 /* sky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sky.jpg; sourceTree = "<group>"; };
+		11CC6DE31DE72B3000F86A85 /* TimerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				110628BC1DE66B4900990294 /* AppDelegate.swift */,
 				110628BE1DE66B4900990294 /* ViewController.swift */,
 				110628C01DE66B4900990294 /* Main.storyboard */,
+				11CC6DE31DE72B3000F86A85 /* TimerVC.swift */,
 				110628C31DE66B4900990294 /* Assets.xcassets */,
 				110628C51DE66B4900990294 /* LaunchScreen.storyboard */,
 				110628C81DE66B4900990294 /* Info.plist */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				110628BF1DE66B4900990294 /* ViewController.swift in Sources */,
+				11CC6DE41DE72B3000F86A85 /* TimerVC.swift in Sources */,
 				110628BD1DE66B4900990294 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +307,7 @@
 				110628CD1DE66B4900990294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
