@@ -9,74 +9,102 @@
 import UIKit
 import UICircularProgressRing
 
-class TimerVC: UIViewController {
+class TimerVC: UIViewController, UICircularProgressRingDelegate {
     
-    var timeLeft = 10.00
     var myTimer : Timer!
     
-    var minutes = 0
+    var minutes = 10
     var seconds = 0
-    var fractions = 0
+    var fractions = 100
     
     var timerString = ""
     
+    
+    
     @IBOutlet weak var countdownLabel: UILabel!
     
+    @IBOutlet weak var startBtn: UIButton!
+    
+    @IBOutlet weak var ring1: UICircularProgressRingView!
+    @IBOutlet weak var ring2: UICircularProgressRingView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Create the view
-        let progressRing = UICircularProgressRingView(frame: CGRect(x: 0, y: 0, width: 240, height: 240))
+        countdownLabel.text = "10:00"
         
-        // Change any of the properties you'd like
-//        progressRing.maxValue = 50
-//        progressRing.innerRingColor = UIColor.blue
+        ring1.delegate = self
+        ring2.delegate = self
         
-        // etc ...
+        ring1.animationStyle = kCAMediaTimingFunctionLinear
+    }
+
+    @IBAction func startBtnTapped(_ sender: Any) {
         
         myTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector (TimerVC.timerRunning), userInfo: nil, repeats: true)
+        
+        ring1.animationStyle = kCAMediaTimingFunctionLinear
+        ring1.setProgress(99, animationDuration: 10, completion: nil)
+        
+        ring2.setProgress(50, animationDuration: 625) {
+            // Increase it more, and customize some properties
+            self.ring2.viewStyle = 4
+            self.ring2.setProgress(100, animationDuration: 3) {
+                self.ring2.fontSize = 70
+                print("Ring 2 finished")
+                
+                self.startBtn.isHidden = true
+            }
+        }
+        
     }
+    
+    func finishedUpdatingProgress(_ forRing: UICircularProgressRingView) {
+        if forRing === ring1 {
+            print("From delegate: Ring 1 finished")
+        } else if forRing === ring2 {
+            print("From delegate: Ring 2 finished")
+        }
+    }
+    
     
     func timerRunning() {
         
-        countdownLabel.text = "\(timeLeft)"
         
-        fractions += 1
-        if fractions == 100 {
-            seconds += 1
-            fractions = 0
+        fractions -= 1
+        if fractions == 0 {
+            seconds -= 1
+            fractions = 100
         }
         
-        if seconds == 60 {
-            minutes += 1
-            seconds = 0
+        if seconds == 0 && minutes == 10 {
+            seconds = 59
+            minutes = 9
+        } else if seconds == 0 && minutes < 10{
+            seconds = 59
+            minutes -= 1
         }
-
-        let fractionString = fractions > 9 ? "\(fractions)" : "0\(fractions)"
+        
+        if minutes == 0 && seconds == 0 {
+            myTimer.invalidate()
+        }
+        
+        
+        //let fractionString = fractions < 9 ? "\(fractions)" : "0\(fractions)"
         let secondsString = seconds > 9 ? "\(seconds)" : "0\(seconds)"
         let minutessString = minutes > 9 ? "\(minutes)" : "0\(minutes)"
         
         timerString = "\(minutessString): \(secondsString)"
-        
         countdownLabel.text = timerString
-
+        
     }
+
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
