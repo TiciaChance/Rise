@@ -24,10 +24,10 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
     @IBOutlet weak var countdownLabel: UILabel!
     
     @IBOutlet weak var startBtn: UIButton!
-    @IBOutlet weak var nextActivityBtn: UIButton!
     
     @IBOutlet weak var ring1: UICircularProgressRingView!
     @IBOutlet weak var ring2: UICircularProgressRingView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
     
     
     func startTimer() {
-       myTimer = Timer.scheduledTimer(timeInterval: 0.00001, target: self, selector: #selector (TimerVC.timerRunning), userInfo: nil, repeats: true)
+       myTimer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector (TimerVC.timerRunning), userInfo: nil, repeats: true)
     }
     
 
@@ -57,7 +57,7 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
         ring1.animationStyle = kCAMediaTimingFunctionLinear
         ring1.setProgress(99, animationDuration: 10, completion: nil)
         
-        ring2.setProgress(100, animationDuration: 100)
+        ring2.setProgress(100, animationDuration: 6_000)
         
 //        ring2.setProgress(50, animationDuration: 625) {
 //            // Increase it more, and customize some properties

@@ -12,13 +12,26 @@ class ViewController: UIViewController {
     
     var quotes = QuotesAPI()
     
+    @IBOutlet weak var quoteLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    
+    @IBAction func labelBtnTapped(_ sender: Any) {
+        
+        authorLabel.isHidden = false
+        
+        self.quoteLabel.text = self.quotes.quote
+        self.authorLabel.text = " -\(self.quotes.author)"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        quotes.APICall()
+        self.quotes.APICall()
+        quoteLabel.text = "Click Below For Daily Quote"
+        authorLabel.isHidden = true
         
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

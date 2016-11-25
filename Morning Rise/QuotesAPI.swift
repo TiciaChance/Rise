@@ -15,27 +15,21 @@ class QuotesAPI {
     
     var quote = String()
     var author = String()
-}
-
-extension QuotesAPI {
+    
     func APICall() {
         Alamofire.request("http://quotes.rest/qod").responseJSON { response in
-
-            
-//      let jsonObject = response.result.value
-            
-        
-            
             
             let jsonObject = JSON(data: response.data!).dictionaryValue
-            guard let quotes = jsonObject["contents"]?["quotes"][0]["quote"].stringValue else {return}
             
+            self.quote = (jsonObject["contents"]?["quotes"][0]["quote"].stringValue)!
+            self.author = (jsonObject["contents"]?["quotes"][0]["author"].stringValue)!
             
+
             
-                print(jsonObject)
-                print(quotes)
-            }
-        
+            print(jsonObject)
+            print(self.quote)
         }
+        
+    }
 }
 
