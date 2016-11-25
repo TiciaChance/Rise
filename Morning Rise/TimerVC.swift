@@ -49,15 +49,15 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
     
     
     func startTimer() {
-       myTimer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector (TimerVC.timerRunning), userInfo: nil, repeats: true)
+       myTimer = Timer.scheduledTimer(timeInterval: 0.0050, target: self, selector: #selector (TimerVC.timerRunning), userInfo: nil, repeats: true)
     }
     
 
     func ringAnimation() {
         ring1.animationStyle = kCAMediaTimingFunctionLinear
-        ring1.setProgress(99, animationDuration: 10, completion: nil)
+        ring1.setProgress(99, animationDuration: 20, completion: nil)
         
-        ring2.setProgress(100, animationDuration: 6_000)
+        ring2.setProgress(100, animationDuration: 800)
         
 //        ring2.setProgress(50, animationDuration: 625) {
 //            // Increase it more, and customize some properties
@@ -94,6 +94,7 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
         
         if seconds == 0 && minutes == 0 {
             myTimer.invalidate()
+            countdownLabel.text = "Time To Start Your Day!"
             
         }
         
