@@ -18,6 +18,7 @@
 		11B0281F1DE8B2A000E9265B /* twilight2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11B0281E1DE8B2A000E9265B /* twilight2.jpg */; };
 		11CC6DE41DE72B3000F86A85 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CC6DE31DE72B3000F86A85 /* TimerVC.swift */; };
 		11E2D3CA1DE8B84700227E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E2D3C91DE8B84700227E7A /* Main.storyboard */; };
+		11F897D01DE8C25C004152BE /* twilight3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11F897CF1DE8C25C004152BE /* twilight3.jpg */; };
 		52EEA34A45DA6673C1696145 /* Pods_Morning_Rise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20C85B94B82775B8F308275 /* Pods_Morning_Rise.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		11B0281E1DE8B2A000E9265B /* twilight2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twilight2.jpg; sourceTree = "<group>"; };
 		11CC6DE31DE72B3000F86A85 /* TimerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
 		11E2D3C91DE8B84700227E7A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		11F897CF1DE8C25C004152BE /* twilight3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twilight3.jpg; sourceTree = "<group>"; };
 		927C35AA1CBBD0228080402A /* Pods-Morning Rise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morning Rise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Morning Rise/Pods-Morning Rise.release.xcconfig"; sourceTree = "<group>"; };
 		AC9E9623149DC9494FC15C6B /* Pods-Morning Rise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morning Rise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Morning Rise/Pods-Morning Rise.debug.xcconfig"; sourceTree = "<group>"; };
 		E20C85B94B82775B8F308275 /* Pods_Morning_Rise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Morning_Rise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,7 @@
 				110628C51DE66B4900990294 /* LaunchScreen.storyboard */,
 				110628C81DE66B4900990294 /* Info.plist */,
 				11B0281C1DE8B0D000E9265B /* twilight.jpg */,
+				11F897CF1DE8C25C004152BE /* twilight3.jpg */,
 				11B0281E1DE8B2A000E9265B /* twilight2.jpg */,
 				110628CE1DE66B7C00990294 /* sky.jpg */,
 			);
@@ -193,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F897D01DE8C25C004152BE /* twilight3.jpg in Resources */,
 				11E2D3CA1DE8B84700227E7A /* Main.storyboard in Resources */,
 				110628C71DE66B4900990294 /* LaunchScreen.storyboard in Resources */,
 				11B0281F1DE8B2A000E9265B /* twilight2.jpg in Resources */,
