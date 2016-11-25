@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		110628BD1DE66B4900990294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110628BC1DE66B4900990294 /* AppDelegate.swift */; };
 		110628BF1DE66B4900990294 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110628BE1DE66B4900990294 /* ViewController.swift */; };
-		110628C21DE66B4900990294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110628C01DE66B4900990294 /* Main.storyboard */; };
 		110628C41DE66B4900990294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110628C31DE66B4900990294 /* Assets.xcassets */; };
 		110628C71DE66B4900990294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110628C51DE66B4900990294 /* LaunchScreen.storyboard */; };
 		110628CF1DE66B7C00990294 /* sky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 110628CE1DE66B7C00990294 /* sky.jpg */; };
 		110F55371DE7F3D500CBBCA3 /* QuotesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110F55361DE7F3D500CBBCA3 /* QuotesAPI.swift */; };
+		11B0281B1DE8AFEA00E9265B /* OnboardingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B0281A1DE8AFEA00E9265B /* OnboardingPageVC.swift */; };
+		11B0281D1DE8B0D000E9265B /* twilight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11B0281C1DE8B0D000E9265B /* twilight.jpg */; };
+		11B0281F1DE8B2A000E9265B /* twilight2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11B0281E1DE8B2A000E9265B /* twilight2.jpg */; };
 		11CC6DE41DE72B3000F86A85 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CC6DE31DE72B3000F86A85 /* TimerVC.swift */; };
+		11E2D3CA1DE8B84700227E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E2D3C91DE8B84700227E7A /* Main.storyboard */; };
 		52EEA34A45DA6673C1696145 /* Pods_Morning_Rise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20C85B94B82775B8F308275 /* Pods_Morning_Rise.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,13 +25,16 @@
 		110628B91DE66B4900990294 /* Morning Rise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Morning Rise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		110628BC1DE66B4900990294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		110628BE1DE66B4900990294 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		110628C11DE66B4900990294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		110628C31DE66B4900990294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		110628C61DE66B4900990294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		110628C81DE66B4900990294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		110628CE1DE66B7C00990294 /* sky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sky.jpg; sourceTree = "<group>"; };
 		110F55361DE7F3D500CBBCA3 /* QuotesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesAPI.swift; sourceTree = "<group>"; };
+		11B0281A1DE8AFEA00E9265B /* OnboardingPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPageVC.swift; sourceTree = "<group>"; };
+		11B0281C1DE8B0D000E9265B /* twilight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twilight.jpg; sourceTree = "<group>"; };
+		11B0281E1DE8B2A000E9265B /* twilight2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twilight2.jpg; sourceTree = "<group>"; };
 		11CC6DE31DE72B3000F86A85 /* TimerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
+		11E2D3C91DE8B84700227E7A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		927C35AA1CBBD0228080402A /* Pods-Morning Rise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morning Rise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Morning Rise/Pods-Morning Rise.release.xcconfig"; sourceTree = "<group>"; };
 		AC9E9623149DC9494FC15C6B /* Pods-Morning Rise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morning Rise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Morning Rise/Pods-Morning Rise.debug.xcconfig"; sourceTree = "<group>"; };
 		E20C85B94B82775B8F308275 /* Pods_Morning_Rise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Morning_Rise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +88,8 @@
 				110628C31DE66B4900990294 /* Assets.xcassets */,
 				110628C51DE66B4900990294 /* LaunchScreen.storyboard */,
 				110628C81DE66B4900990294 /* Info.plist */,
+				11B0281C1DE8B0D000E9265B /* twilight.jpg */,
+				11B0281E1DE8B2A000E9265B /* twilight2.jpg */,
 				110628CE1DE66B7C00990294 /* sky.jpg */,
 			);
 			path = "Morning Rise";
@@ -92,6 +100,7 @@
 			children = (
 				110628BE1DE66B4900990294 /* ViewController.swift */,
 				11CC6DE31DE72B3000F86A85 /* TimerVC.swift */,
+				11B0281A1DE8AFEA00E9265B /* OnboardingPageVC.swift */,
 			);
 			name = VControllers;
 			sourceTree = "<group>";
@@ -99,7 +108,7 @@
 		110F55321DE7B0B700CBBCA3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				110628C01DE66B4900990294 /* Main.storyboard */,
+				11E2D3C91DE8B84700227E7A /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -184,10 +193,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E2D3CA1DE8B84700227E7A /* Main.storyboard in Resources */,
 				110628C71DE66B4900990294 /* LaunchScreen.storyboard in Resources */,
+				11B0281F1DE8B2A000E9265B /* twilight2.jpg in Resources */,
 				110628CF1DE66B7C00990294 /* sky.jpg in Resources */,
+				11B0281D1DE8B0D000E9265B /* twilight.jpg in Resources */,
 				110628C41DE66B4900990294 /* Assets.xcassets in Resources */,
-				110628C21DE66B4900990294 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +260,7 @@
 				110628BF1DE66B4900990294 /* ViewController.swift in Sources */,
 				110F55371DE7F3D500CBBCA3 /* QuotesAPI.swift in Sources */,
 				11CC6DE41DE72B3000F86A85 /* TimerVC.swift in Sources */,
+				11B0281B1DE8AFEA00E9265B /* OnboardingPageVC.swift in Sources */,
 				110628BD1DE66B4900990294 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,14 +268,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		110628C01DE66B4900990294 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				110628C11DE66B4900990294 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		110628C51DE66B4900990294 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gHK-iQ-WBd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -215,5 +215,142 @@
             </objects>
             <point key="canvasLocation" x="788" y="141.67916041979012"/>
         </scene>
+        <!--Onboarding PageVC-->
+        <scene sceneID="OsM-RT-RMC">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yzk-Ec-cG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pageViewController storyboardIdentifier="onboarding" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="gHK-iQ-WBd" customClass="OnboardingPageVC" customModule="Morning_Rise" customModuleProvider="target" sceneMemberID="viewController"/>
+            </objects>
+            <point key="canvasLocation" x="-1969" y="138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pbX-Fb-OEK">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gc3-aT-X9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="FirstVC" id="cbM-3a-wXE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hvy-mx-rRW"/>
+                        <viewControllerLayoutGuide type="bottom" id="2A5-Vm-QV1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Se7-aW-6ZL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twilight.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dxd-xn-UER">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4R0-2I-8NL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="o9Y-7f-2la">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rise is meant to brighten and simplify your morning in ten, short minutes." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfv-sf-xdy">
+                                            <rect key="frame" x="67" y="213" width="240" height="240"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="240" id="BEa-CG-3zh"/>
+                                                <constraint firstAttribute="width" constant="240" id="hoi-0r-00O"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="24"/>
+                                            <color key="textColor" red="0.1647058824" green="0.16862745100000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="yfv-sf-xdy" firstAttribute="centerX" secondItem="o9Y-7f-2la" secondAttribute="centerX" id="0Xe-vR-I14"/>
+                                        <constraint firstItem="yfv-sf-xdy" firstAttribute="centerY" secondItem="o9Y-7f-2la" secondAttribute="centerY" id="3EL-Ns-6rQ"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4R0-2I-8NL" firstAttribute="centerY" secondItem="dxd-xn-UER" secondAttribute="centerY" id="0qt-xg-2yu"/>
+                            <constraint firstItem="dxd-xn-UER" firstAttribute="centerY" secondItem="Se7-aW-6ZL" secondAttribute="centerY" id="28Z-h5-qT3"/>
+                            <constraint firstItem="4R0-2I-8NL" firstAttribute="height" secondItem="dxd-xn-UER" secondAttribute="height" id="FYj-rA-cK4"/>
+                            <constraint firstItem="dxd-xn-UER" firstAttribute="height" secondItem="Se7-aW-6ZL" secondAttribute="height" id="Lj6-o0-gcb"/>
+                            <constraint firstItem="4R0-2I-8NL" firstAttribute="centerX" secondItem="dxd-xn-UER" secondAttribute="centerX" id="Wor-nE-F9Y"/>
+                            <constraint firstItem="dxd-xn-UER" firstAttribute="centerX" secondItem="Se7-aW-6ZL" secondAttribute="centerX" id="Zwj-SS-bxv"/>
+                            <constraint firstItem="dxd-xn-UER" firstAttribute="width" secondItem="Se7-aW-6ZL" secondAttribute="width" id="aFW-il-pD2"/>
+                            <constraint firstItem="4R0-2I-8NL" firstAttribute="width" secondItem="dxd-xn-UER" secondAttribute="width" id="ptJ-ri-JSP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-1318" y="126"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mdi-9U-QTE">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6I-hK-EaG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="SecondVC" id="mBD-Tn-bbV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dlA-XQ-4Lj"/>
+                        <viewControllerLayoutGuide type="bottom" id="xhs-HG-CXz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dvz-K1-8YG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twilight2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vdn-gR-lIb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqB-ws-bWA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="L9T-xC-akp">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First, get your inspirational quote of the day, then begn your ten minute meditation." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Pa-l6-ehi">
+                                            <rect key="frame" x="67" y="213" width="240" height="240"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="240" id="Y5T-Kf-6nT"/>
+                                                <constraint firstAttribute="width" constant="240" id="yYS-27-kw1"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <color key="textColor" red="0.75751221179999995" green="0.81906312699999995" blue="0.82129830120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mk1-9H-65E">
+                                            <rect key="frame" x="152" y="475" width="90" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <state key="normal" title="Begin">
+                                                <color key="titleColor" red="0.75751221179999995" green="0.81906312699999995" blue="0.82129830120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="Yxk-d9-vn2"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="5Pa-l6-ehi" firstAttribute="centerY" secondItem="uqB-ws-bWA" secondAttribute="centerY" id="OfB-cg-sOR"/>
+                                    <constraint firstItem="5Pa-l6-ehi" firstAttribute="centerX" secondItem="uqB-ws-bWA" secondAttribute="centerX" id="m64-0a-gLt"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vdn-gR-lIb" firstAttribute="width" secondItem="Dvz-K1-8YG" secondAttribute="width" id="CGl-qr-Jjx"/>
+                            <constraint firstItem="vdn-gR-lIb" firstAttribute="height" secondItem="Dvz-K1-8YG" secondAttribute="height" id="EcB-Sm-hUa"/>
+                            <constraint firstItem="uqB-ws-bWA" firstAttribute="height" secondItem="vdn-gR-lIb" secondAttribute="height" id="EfO-SP-Sga"/>
+                            <constraint firstItem="uqB-ws-bWA" firstAttribute="centerY" secondItem="vdn-gR-lIb" secondAttribute="centerY" id="LlX-IU-grv"/>
+                            <constraint firstItem="uqB-ws-bWA" firstAttribute="centerX" secondItem="vdn-gR-lIb" secondAttribute="centerX" id="W6x-Zo-Edp"/>
+                            <constraint firstItem="vdn-gR-lIb" firstAttribute="centerX" secondItem="Dvz-K1-8YG" secondAttribute="centerX" id="gSP-Re-cE7"/>
+                            <constraint firstItem="vdn-gR-lIb" firstAttribute="centerY" secondItem="Dvz-K1-8YG" secondAttribute="centerY" id="hDK-Jr-Kg8"/>
+                            <constraint firstItem="uqB-ws-bWA" firstAttribute="width" secondItem="vdn-gR-lIb" secondAttribute="width" id="ihH-if-a7k"/>
+                        </constraints>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-676" y="127"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="twilight.jpg" width="1941" height="1200"/>
+        <image name="twilight2.jpg" width="2025" height="1437"/>
+    </resources>
 </document>
