@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Morning Rise.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>860FF6427DB19E92A34959BE8DD2D4D2</key>
+		<key>63B160DF01D5318C7DDD02E15A259810</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B6D9C4A49AEF2F01D17BA382BBC9BEE3</key>
+		<key>742800EEE6A01A4446DF74E90D6D49CA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5A29939A62807AC7B0A446753CE68E3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

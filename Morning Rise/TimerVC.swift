@@ -19,11 +19,12 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
     
     var timerString = ""
     
-    
+    //button reappears
     
     @IBOutlet weak var countdownLabel: UILabel!
     
     @IBOutlet weak var startBtn: UIButton!
+    @IBOutlet weak var nextActivityBtn: UIButton!
     
     @IBOutlet weak var ring1: UICircularProgressRingView!
     @IBOutlet weak var ring2: UICircularProgressRingView!
@@ -41,22 +42,33 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
 
     @IBAction func startBtnTapped(_ sender: Any) {
         
-        myTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector (TimerVC.timerRunning), userInfo: nil, repeats: true)
-        
+        startTimer()
+        ringAnimation()
+        self.startBtn.isHidden = true
+    }
+    
+    
+    func startTimer() {
+       myTimer = Timer.scheduledTimer(timeInterval: 0.00001, target: self, selector: #selector (TimerVC.timerRunning), userInfo: nil, repeats: true)
+    }
+    
+
+    func ringAnimation() {
         ring1.animationStyle = kCAMediaTimingFunctionLinear
         ring1.setProgress(99, animationDuration: 10, completion: nil)
         
-        ring2.setProgress(50, animationDuration: 625) {
-            // Increase it more, and customize some properties
-            self.ring2.viewStyle = 4
-            self.ring2.setProgress(100, animationDuration: 3) {
-                self.ring2.fontSize = 70
-                print("Ring 2 finished")
-                
-                self.startBtn.isHidden = true
-            }
-        }
+        ring2.setProgress(100, animationDuration: 100)
         
+//        ring2.setProgress(50, animationDuration: 625) {
+//            // Increase it more, and customize some properties
+//            self.ring2.viewStyle = 4
+//            self.ring2.setProgress(100, animationDuration: 625) {
+//                self.ring2.fontSize = 70
+//                print("Ring 2 finished")
+        
+//            }
+//}
+
     }
     
     func finishedUpdatingProgress(_ forRing: UICircularProgressRingView) {
@@ -66,10 +78,8 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
             print("From delegate: Ring 2 finished")
         }
     }
-    
-    
+
     func timerRunning() {
-        
         
         fractions -= 1
         if fractions == 0 {
@@ -77,18 +87,15 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
             fractions = 100
         }
         
-        if seconds == 0 && minutes == 10 {
-            seconds = 59
-            minutes = 9
-        } else if seconds == 0 && minutes < 10{
-            seconds = 59
+        if seconds == 0 && minutes != 0 {
             minutes -= 1
+            seconds = 59
         }
         
-        if minutes == 0 && seconds == 0 {
+        if seconds == 0 && minutes == 0 {
             myTimer.invalidate()
+            
         }
-        
         
         //let fractionString = fractions < 9 ? "\(fractions)" : "0\(fractions)"
         let secondsString = seconds > 9 ? "\(seconds)" : "0\(seconds)"
@@ -99,7 +106,6 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
         
     }
 
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

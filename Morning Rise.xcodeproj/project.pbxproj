@@ -13,6 +13,7 @@
 		110628C41DE66B4900990294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110628C31DE66B4900990294 /* Assets.xcassets */; };
 		110628C71DE66B4900990294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110628C51DE66B4900990294 /* LaunchScreen.storyboard */; };
 		110628CF1DE66B7C00990294 /* sky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 110628CE1DE66B7C00990294 /* sky.jpg */; };
+		110F55371DE7F3D500CBBCA3 /* QuotesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110F55361DE7F3D500CBBCA3 /* QuotesAPI.swift */; };
 		11CC6DE41DE72B3000F86A85 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CC6DE31DE72B3000F86A85 /* TimerVC.swift */; };
 		52EEA34A45DA6673C1696145 /* Pods_Morning_Rise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20C85B94B82775B8F308275 /* Pods_Morning_Rise.framework */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		110628C61DE66B4900990294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		110628C81DE66B4900990294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		110628CE1DE66B7C00990294 /* sky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sky.jpg; sourceTree = "<group>"; };
+		110F55361DE7F3D500CBBCA3 /* QuotesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesAPI.swift; sourceTree = "<group>"; };
 		11CC6DE31DE72B3000F86A85 /* TimerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
 		927C35AA1CBBD0228080402A /* Pods-Morning Rise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morning Rise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Morning Rise/Pods-Morning Rise.release.xcconfig"; sourceTree = "<group>"; };
 		AC9E9623149DC9494FC15C6B /* Pods-Morning Rise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morning Rise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Morning Rise/Pods-Morning Rise.debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		110146501DE7F60E006BED36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				110F55361DE7F3D500CBBCA3 /* QuotesAPI.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		110628B01DE66B4900990294 = {
 			isa = PBXGroup;
 			children = (
@@ -66,15 +76,32 @@
 			isa = PBXGroup;
 			children = (
 				110628BC1DE66B4900990294 /* AppDelegate.swift */,
-				110628BE1DE66B4900990294 /* ViewController.swift */,
-				110628C01DE66B4900990294 /* Main.storyboard */,
-				11CC6DE31DE72B3000F86A85 /* TimerVC.swift */,
+				110F55311DE7B09300CBBCA3 /* VControllers */,
+				110F55321DE7B0B700CBBCA3 /* View */,
 				110628C31DE66B4900990294 /* Assets.xcassets */,
+				110146501DE7F60E006BED36 /* Model */,
 				110628C51DE66B4900990294 /* LaunchScreen.storyboard */,
 				110628C81DE66B4900990294 /* Info.plist */,
 				110628CE1DE66B7C00990294 /* sky.jpg */,
 			);
 			path = "Morning Rise";
+			sourceTree = "<group>";
+		};
+		110F55311DE7B09300CBBCA3 /* VControllers */ = {
+			isa = PBXGroup;
+			children = (
+				110628BE1DE66B4900990294 /* ViewController.swift */,
+				11CC6DE31DE72B3000F86A85 /* TimerVC.swift */,
+			);
+			name = VControllers;
+			sourceTree = "<group>";
+		};
+		110F55321DE7B0B700CBBCA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				110628C01DE66B4900990294 /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		12A0B2DF1878FF47C027B744 /* Frameworks */ = {
@@ -220,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				110628BF1DE66B4900990294 /* ViewController.swift in Sources */,
+				110F55371DE7F3D500CBBCA3 /* QuotesAPI.swift in Sources */,
 				11CC6DE41DE72B3000F86A85 /* TimerVC.swift in Sources */,
 				110628BD1DE66B4900990294 /* AppDelegate.swift in Sources */,
 			);
