@@ -49,15 +49,19 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
     
     
     func startTimer() {
-        myTimer = Timer.scheduledTimer(timeInterval: 0.0055, target: self, selector: #selector (TimerVC.timerRunning), userInfo: nil, repeats: true)
+        
+        //0.0055 for simulator
+        myTimer = Timer.scheduledTimer(timeInterval: 0.010, target: self, selector: #selector (TimerVC.timerRunning), userInfo: nil, repeats: true)
     }
     
     
     func ringAnimation() {
+        
+        //i think 625 animation duration for simulator
         ring1.animationStyle = kCAMediaTimingFunctionLinear
         ring1.setProgress(99, animationDuration: 20, completion: nil)
-        
-        ring2.setProgress(100, animationDuration: 610)
+        //
+        ring2.setProgress(100, animationDuration: 600)
         
         
     }
@@ -80,7 +84,7 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
         
         if seconds == 0 && minutes != 0 {
             minutes -= 1
-            seconds = 59
+            seconds = 60
         }
         
         if seconds == 0 && minutes == 0 {
@@ -92,6 +96,7 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
         //let fractionString = fractions < 9 ? "\(fractions)" : "0\(fractions)"
         let secondsString = seconds > 9 ? "\(seconds)" : "0\(seconds)"
         let minutessString = minutes > 9 ? "\(minutes)" : "0\(minutes)"
+        
         
         timerString = "\(minutessString): \(secondsString)"
         countdownLabel.text = timerString
