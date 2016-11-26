@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7La-P4-JDq">
-                                <rect key="frame" x="77" y="282" width="220" height="48"/>
+                                <rect key="frame" x="77" y="302" width="220" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="1zy-JC-0pI"/>
                                     <constraint firstAttribute="width" constant="220" id="KfR-oS-F33"/>
@@ -36,9 +36,9 @@
                                 <rect key="frame" x="0.0" y="517" width="375" height="150"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34f-XM-1S8">
-                                        <rect key="frame" x="114.5" y="59" width="146" height="33"/>
+                                        <rect key="frame" x="102" y="59" width="171" height="33"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                        <state key="normal" title="Start Your Routine">
+                                        <state key="normal" title="Start Your Meditation">
                                             <color key="titleColor" red="0.90472155809402466" green="0.92569226026535034" blue="0.94743448495864868" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -69,11 +69,11 @@
                                     <action selector="labelBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d3N-K3-AZe"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10o-9p-qnY">
-                                <rect key="frame" x="57" y="82" width="260" height="200"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="10o-9p-qnY">
+                                <rect key="frame" x="16" y="34" width="343" height="260"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="Lbl-07-vTi"/>
-                                    <constraint firstAttribute="height" constant="200" id="q61-ma-gIV"/>
+                                    <constraint firstAttribute="height" constant="260" id="exZ-7k-gz9"/>
+                                    <constraint firstAttribute="width" constant="343" id="mMZ-e4-DlX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <color key="textColor" red="0.091177903115749359" green="0.10015518218278885" blue="0.16271284222602844" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -83,22 +83,26 @@
                         <color key="backgroundColor" red="0.75751221179962158" green="0.81906312704086304" blue="0.82129830121994019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aCT-Kh-Mf3" firstAttribute="top" secondItem="uUS-m6-izW" secondAttribute="bottom" constant="65" id="2Pe-rq-HKU"/>
-                            <constraint firstItem="10o-9p-qnY" firstAttribute="centerX" secondItem="az3-5a-oUw" secondAttribute="centerX" id="3aY-Ts-bsz"/>
                             <constraint firstItem="aCT-Kh-Mf3" firstAttribute="leading" secondItem="az3-5a-oUw" secondAttribute="leading" id="5cU-F4-ZiG"/>
+                            <constraint firstItem="7La-P4-JDq" firstAttribute="centerX" secondItem="az3-5a-oUw" secondAttribute="centerX" id="8IX-oZ-O5Z"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="10o-9p-qnY" secondAttribute="leading" id="8ZP-JO-e5B"/>
                             <constraint firstItem="7La-P4-JDq" firstAttribute="leading" secondItem="az3-5a-oUw" secondAttribute="leadingMargin" constant="61" id="F4G-l9-h0X"/>
                             <constraint firstItem="uUS-m6-izW" firstAttribute="centerX" secondItem="az3-5a-oUw" secondAttribute="centerX" id="IRH-Sk-53h"/>
+                            <constraint firstItem="10o-9p-qnY" firstAttribute="centerX" secondItem="az3-5a-oUw" secondAttribute="centerX" id="IbX-Fh-XUi"/>
                             <constraint firstItem="uUS-m6-izW" firstAttribute="leading" secondItem="az3-5a-oUw" secondAttribute="leadingMargin" constant="61" id="K1i-Ez-aCO"/>
+                            <constraint firstItem="10o-9p-qnY" firstAttribute="top" secondItem="8mE-gv-jtF" secondAttribute="bottom" constant="14" id="KrM-Kc-c9j"/>
                             <constraint firstItem="aCT-Kh-Mf3" firstAttribute="centerX" secondItem="az3-5a-oUw" secondAttribute="centerX" id="Luq-X4-O1h"/>
-                            <constraint firstItem="7La-P4-JDq" firstAttribute="top" secondItem="10o-9p-qnY" secondAttribute="bottom" id="NMV-oo-bTa"/>
                             <constraint firstAttribute="trailing" secondItem="aCT-Kh-Mf3" secondAttribute="trailing" id="OmJ-Cc-cka"/>
                             <constraint firstItem="le0-D9-2sk" firstAttribute="top" secondItem="aCT-Kh-Mf3" secondAttribute="bottom" id="RG5-9z-0cm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7La-P4-JDq" secondAttribute="trailing" constant="62" id="RKs-gH-2fA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uUS-m6-izW" secondAttribute="trailing" constant="62" id="jk1-rb-uzj"/>
-                            <constraint firstItem="10o-9p-qnY" firstAttribute="top" secondItem="8mE-gv-jtF" secondAttribute="bottom" constant="62" id="zrm-AF-Ska"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="10o-9p-qnY" secondAttribute="trailing" id="wCa-zF-cCn"/>
+                            <constraint firstItem="7La-P4-JDq" firstAttribute="top" secondItem="10o-9p-qnY" secondAttribute="bottom" constant="8" id="xXh-mw-Eg0"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="authorLabel" destination="7La-P4-JDq" id="eNR-XD-3eQ"/>
+                        <outlet property="quoteBtn" destination="uUS-m6-izW" id="PkK-Qm-Zjl"/>
                         <outlet property="quoteLabel" destination="10o-9p-qnY" id="NtM-H7-rfn"/>
                     </connections>
                 </viewController>
@@ -315,7 +319,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <state key="normal" title="Begin">
-                                                <color key="titleColor" red="0.75751221179999995" green="0.81906312699999995" blue="0.82129830120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleColor" red="0.11399666219949722" green="0.12512359023094177" blue="0.20150956511497498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="Yxk-d9-vn2"/>

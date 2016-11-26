@@ -24,10 +24,13 @@ class QuotesAPI {
             self.quote = (jsonObject["contents"]?["quotes"][0]["quote"].stringValue)!
             self.author = (jsonObject["contents"]?["quotes"][0]["author"].stringValue)!
             
-
+            if self.author == "" {
+                self.author = "Unknown"
+            }
             
             print(jsonObject)
             print(self.quote)
+            print(self.author)
         }
         
     }

@@ -39,7 +39,7 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
         
         ring1.animationStyle = kCAMediaTimingFunctionLinear
     }
-
+    
     @IBAction func startBtnTapped(_ sender: Any) {
         
         startTimer()
@@ -49,26 +49,17 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
     
     
     func startTimer() {
-       myTimer = Timer.scheduledTimer(timeInterval: 0.0050, target: self, selector: #selector (TimerVC.timerRunning), userInfo: nil, repeats: true)
+        myTimer = Timer.scheduledTimer(timeInterval: 0.0055, target: self, selector: #selector (TimerVC.timerRunning), userInfo: nil, repeats: true)
     }
     
-
+    
     func ringAnimation() {
         ring1.animationStyle = kCAMediaTimingFunctionLinear
         ring1.setProgress(99, animationDuration: 20, completion: nil)
         
-        ring2.setProgress(100, animationDuration: 800)
+        ring2.setProgress(100, animationDuration: 610)
         
-//        ring2.setProgress(50, animationDuration: 625) {
-//            // Increase it more, and customize some properties
-//            self.ring2.viewStyle = 4
-//            self.ring2.setProgress(100, animationDuration: 625) {
-//                self.ring2.fontSize = 70
-//                print("Ring 2 finished")
         
-//            }
-//}
-
     }
     
     func finishedUpdatingProgress(_ forRing: UICircularProgressRingView) {
@@ -78,7 +69,7 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
             print("From delegate: Ring 2 finished")
         }
     }
-
+    
     func timerRunning() {
         
         fractions -= 1
@@ -94,7 +85,7 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
         
         if seconds == 0 && minutes == 0 {
             myTimer.invalidate()
-            countdownLabel.text = "Time To Start Your Day!"
+            alert()
             
         }
         
@@ -106,7 +97,20 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
         countdownLabel.text = timerString
         
     }
-
+    
+    func alert() {
+        let alertController = UIAlertController(title: "Your Meditation is Done", message: "Enjoy Your Day!", preferredStyle: .alert)
+        
+        let submitError = UIAlertAction(title: "Okay", style: .default) { (UIAlertAction) in
+            
+            self.dismiss(animated: true, completion: nil)
+        }
+        alertController.addAction(submitError)
+        present(alertController, animated: true, completion: nil)
+        
+        
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

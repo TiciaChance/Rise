@@ -14,12 +14,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var quoteBtn: UIButton!
     
     @IBAction func labelBtnTapped(_ sender: Any) {
         
         authorLabel.isHidden = false
+        quoteBtn.isHidden = true
         
         self.quoteLabel.text = self.quotes.quote
+        
+        
         self.authorLabel.text = " -\(self.quotes.author)"
     }
     
