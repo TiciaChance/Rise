@@ -59,22 +59,16 @@
                                 </constraints>
                             </view>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUS-m6-izW">
-                                <rect key="frame" x="77" y="405" width="220" height="47"/>
-                                <color key="backgroundColor" red="0.52156862749999999" green="0.31372549020000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="97" y="405" width="180" height="47"/>
+                                <color key="backgroundColor" red="0.11399666219949722" green="0.12512359023094177" blue="0.20150956511497498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="220" id="GdY-Lu-JVd"/>
+                                    <constraint firstAttribute="width" constant="180" id="GdY-Lu-JVd"/>
                                     <constraint firstAttribute="height" constant="47" id="v3t-9y-1i0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <state key="normal" title="Get Quote">
-                                    <color key="titleColor" red="0.11399666219949722" green="0.12512359023094177" blue="0.20150956511497498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.52156862749999999" green="0.31372549020000001" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="labelBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d3N-K3-AZe"/>
                                 </connections>
@@ -99,13 +93,11 @@
                             <constraint firstItem="7La-P4-JDq" firstAttribute="leading" secondItem="az3-5a-oUw" secondAttribute="leadingMargin" constant="61" id="F4G-l9-h0X"/>
                             <constraint firstItem="uUS-m6-izW" firstAttribute="centerX" secondItem="az3-5a-oUw" secondAttribute="centerX" id="IRH-Sk-53h"/>
                             <constraint firstItem="10o-9p-qnY" firstAttribute="centerX" secondItem="az3-5a-oUw" secondAttribute="centerX" id="IbX-Fh-XUi"/>
-                            <constraint firstItem="uUS-m6-izW" firstAttribute="leading" secondItem="az3-5a-oUw" secondAttribute="leadingMargin" constant="61" id="K1i-Ez-aCO"/>
                             <constraint firstItem="10o-9p-qnY" firstAttribute="top" secondItem="8mE-gv-jtF" secondAttribute="bottom" constant="14" id="KrM-Kc-c9j"/>
                             <constraint firstItem="aCT-Kh-Mf3" firstAttribute="centerX" secondItem="az3-5a-oUw" secondAttribute="centerX" id="Luq-X4-O1h"/>
                             <constraint firstAttribute="trailing" secondItem="aCT-Kh-Mf3" secondAttribute="trailing" id="OmJ-Cc-cka"/>
                             <constraint firstItem="le0-D9-2sk" firstAttribute="top" secondItem="aCT-Kh-Mf3" secondAttribute="bottom" id="RG5-9z-0cm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7La-P4-JDq" secondAttribute="trailing" constant="62" id="RKs-gH-2fA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uUS-m6-izW" secondAttribute="trailing" constant="62" id="jk1-rb-uzj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="10o-9p-qnY" secondAttribute="trailing" id="wCa-zF-cCn"/>
                             <constraint firstItem="7La-P4-JDq" firstAttribute="top" secondItem="10o-9p-qnY" secondAttribute="bottom" constant="8" id="xXh-mw-Eg0"/>
                         </constraints>
