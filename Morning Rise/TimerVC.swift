@@ -97,7 +97,6 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
         let secondsString = seconds > 9 ? "\(seconds)" : "0\(seconds)"
         let minutessString = minutes > 9 ? "\(minutes)" : "0\(minutes)"
         
-        
         timerString = "\(minutessString): \(secondsString)"
         countdownLabel.text = timerString
         
