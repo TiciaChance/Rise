@@ -84,7 +84,7 @@ class TimerVC: UIViewController, UICircularProgressRingDelegate {
         
         if seconds == 0 && minutes != 0 {
             minutes -= 1
-            seconds = 59
+            seconds = 59 
         }
         
         if seconds == 0 && minutes == 0 {
