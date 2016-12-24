@@ -85,7 +85,7 @@
 			children = (
 				110628BC1DE66B4900990294 /* AppDelegate.swift */,
 				110146501DE7F60E006BED36 /* Model */,
-				110F55321DE7B0B700CBBCA3 /* View */,
+				110F55321DE7B0B700CBBCA3 /* Storyboards */,
 				110F55311DE7B09300CBBCA3 /* VControllers */,
 				110628C31DE66B4900990294 /* Assets.xcassets */,
 				110628C51DE66B4900990294 /* LaunchScreen.storyboard */,
@@ -108,12 +108,12 @@
 			name = VControllers;
 			sourceTree = "<group>";
 		};
-		110F55321DE7B0B700CBBCA3 /* View */ = {
+		110F55321DE7B0B700CBBCA3 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				11E2D3C91DE8B84700227E7A /* Main.storyboard */,
 			);
-			name = View;
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 		12A0B2DF1878FF47C027B744 /* Frameworks */ = {
@@ -168,7 +168,7 @@
 				TargetAttributes = {
 					110628B81DE66B4900990294 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = TDFXWLD7DJ;
+						DevelopmentTeam = TAFW84825Y;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -385,12 +385,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TDFXWLD7DJ;
+				DEVELOPMENT_TEAM = TAFW84825Y;
 				INFOPLIST_FILE = "Morning Rise/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.electricchance.Morning-Rise";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -400,12 +401,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TDFXWLD7DJ;
+				DEVELOPMENT_TEAM = TAFW84825Y;
 				INFOPLIST_FILE = "Morning Rise/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.electricchance.Morning-Rise";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

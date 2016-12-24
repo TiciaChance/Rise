@@ -28,9 +28,6 @@ class QuotesAPI {
                 self.author = "Unknown"
             }
             
-            print(jsonObject)
-            print(self.quote)
-            print(self.author)
         }
         
     }

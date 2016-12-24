@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C19FBD202B9ABA10987033D6FAF1C381C9CFA0AD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C19FBD202B9ABA10987033D6FAF1C381C9CFA0AD" : 9223372036854775807,
+    "8A44939297ED3C966B1B3628C513AD56F499E2A8" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8CE62C55-D22E-4BF5-A50F-4C82785A5765",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C19FBD202B9ABA10987033D6FAF1C381C9CFA0AD" : "Rise\/",
+    "8A44939297ED3C966B1B3628C513AD56F499E2A8" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Morning Rise",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Morning Rise.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:TiciaChance\/NameTheShow.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8A44939297ED3C966B1B3628C513AD56F499E2A8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:TiciaChance\/Rise.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C19FBD202B9ABA10987033D6FAF1C381C9CFA0AD"
+    }
+  ]
+}
