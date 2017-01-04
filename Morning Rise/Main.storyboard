@@ -22,9 +22,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twilight.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6a7-fv-LEj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="10o-9p-qnY">
                                 <rect key="frame" x="0.0" y="20" width="375" height="280"/>
                                 <constraints>
@@ -41,7 +38,7 @@
                                     <constraint firstAttribute="width" constant="220" id="KfR-oS-F33"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <color key="textColor" red="0.11399666219949722" green="0.12512359023094177" blue="0.20150956511497498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.87091773750000001" green="0.8549646139" blue="0.85052782299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCT-Kh-Mf3" userLabel="Bottom View">
@@ -81,7 +78,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.75751221179962158" green="0.81906312704086304" blue="0.82129830121994019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1110192463" green="0.16534078120000001" blue="0.30228030680000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="10o-9p-qnY" firstAttribute="leading" secondItem="az3-5a-oUw" secondAttribute="leading" id="1ib-9H-B18"/>
                             <constraint firstItem="10o-9p-qnY" firstAttribute="top" secondItem="8mE-gv-jtF" secondAttribute="bottom" id="57A-Tk-OSl"/>
@@ -89,15 +86,10 @@
                             <constraint firstItem="7La-P4-JDq" firstAttribute="top" secondItem="10o-9p-qnY" secondAttribute="bottom" constant="26" id="AV0-dA-WPn"/>
                             <constraint firstAttribute="trailing" secondItem="aCT-Kh-Mf3" secondAttribute="trailing" id="EOJ-q9-XAg"/>
                             <constraint firstItem="aCT-Kh-Mf3" firstAttribute="centerX" secondItem="az3-5a-oUw" secondAttribute="centerX" id="MIy-WB-NYh"/>
-                            <constraint firstItem="6a7-fv-LEj" firstAttribute="leading" secondItem="az3-5a-oUw" secondAttribute="leading" id="OLe-08-6zg"/>
                             <constraint firstAttribute="trailing" secondItem="10o-9p-qnY" secondAttribute="trailing" id="Rx1-4b-cl9"/>
                             <constraint firstItem="aCT-Kh-Mf3" firstAttribute="top" secondItem="uUS-m6-izW" secondAttribute="bottom" constant="37" id="Ryy-Wf-w7f"/>
-                            <constraint firstItem="le0-D9-2sk" firstAttribute="top" secondItem="6a7-fv-LEj" secondAttribute="bottom" id="ZTb-Lo-rEp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uUS-m6-izW" secondAttribute="trailing" constant="82" id="cUp-E4-jMj"/>
                             <constraint firstItem="le0-D9-2sk" firstAttribute="top" secondItem="aCT-Kh-Mf3" secondAttribute="bottom" id="eoW-5P-exO"/>
-                            <constraint firstItem="6a7-fv-LEj" firstAttribute="top" secondItem="az3-5a-oUw" secondAttribute="top" id="jmX-W4-pyD"/>
-                            <constraint firstItem="le0-D9-2sk" firstAttribute="top" secondItem="6a7-fv-LEj" secondAttribute="bottom" id="nFP-H5-gz3"/>
-                            <constraint firstAttribute="trailing" secondItem="6a7-fv-LEj" secondAttribute="trailing" id="tUW-sT-cKH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7La-P4-JDq" secondAttribute="trailing" constant="62" id="y52-gi-AfC"/>
                         </constraints>
                     </view>
@@ -318,7 +310,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mk1-9H-65E">
                                             <rect key="frame" x="152" y="475" width="90" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <state key="normal" title="Begin">
                                                 <color key="titleColor" red="0.11399666219949722" green="0.12512359023094177" blue="0.20150956511497498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
@@ -352,7 +344,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="twilight.jpg" width="1941" height="1200"/>
         <image name="twilight2.jpg" width="2025" height="1437"/>
         <image name="twilight3.jpg" width="800" height="500"/>
     </resources>
